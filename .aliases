@@ -11,17 +11,20 @@ alias -- -="cd -"
 # alias d="cd ~/Documents/Dropbox"
 # alias dl="cd ~/Downloads"
 # alias dt="cd ~/Desktop"
-alias d="cd ~/dev"
 alias w="cd ~/dev/ws"
 # alias g="git"
-
+alias d="docker"
+alias dc="docker-compose"
+alias dps="docker ps"
+alias dcps="docker-compose ps"
 
 # User specific aliases and functions
 #alias rm='rm -i'
 #alias cp='cp -i'
 #alias mv='mv -i'
 
-
+alias oa="atom ~/dev/ws/dotfiles/ ~/dev/ws/Jiraton/ ~/dev/my/"
+alias listbrew="brew list | xargs -n1 brew desc"
 
 # DG
 # Detect which `ls` flavor is in use
@@ -71,8 +74,8 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
-alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
+# alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
+# alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
