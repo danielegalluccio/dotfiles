@@ -61,16 +61,30 @@ brew cask install docker
 ## Generic utilities
 ##############################################
 
+<<<<<<< HEAD
+# file system watch and execute command on file change
+# brew install fswatch
+=======
 ## Desktop utilities
 ##############################################
+>>>>>>> 0d02f971b2124ef00658d0349910affebd6dec5f
 
 brew cask install keka            # file compressor
 
+<<<<<<< HEAD
+
+brew cask install atext       # Shortcut manager / how to add licence number?
+brew cask install tomighty    # Pomodoro tecnique focus manager
+brew cask install day-o       # Menubar Calendar replacement
+
+# brew cask install macdown && ./addDockIcon.sh "MacDown"
+=======
 # how to add licence number?
 brew cask install atext           # Text expander
 brew cask install tomighty        # Pomodoro Technique timer
 
 # brew cask install macdown && ./addDockIcon.sh "MacDown"             # Markdown Editor
+>>>>>>> 0d02f971b2124ef00658d0349910affebd6dec5f
 brew cask install google-chrome && ./addDockIcon.sh "Google Chrome"
 brew cask install firefox && ./addDockIcon.sh "Firefox"
 brew cask install slack && ./addDockIcon.sh "Slack"
@@ -143,6 +157,8 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install tig
+
 brew install gs
 brew install imagemagick --with-webp
 
