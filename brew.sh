@@ -21,7 +21,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+# brew install gnu-sed --with-default-names
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion2
@@ -32,54 +32,65 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 
-
-brew install caskroom/cask/brew-cask
-# brew tap caskroom/cask # !!! ERROR HERE ?
-
-## Generic utilities
+## Development utilities
 ##############################################
-
-# command line json editor
-brew install jq
-
-# AWS command line interface
-brew install awscli
-
-# file compressor
-brew cask install keka
-
-# multi-protocol (HTTP(S), FTP, SFTP, BitTorrent, and Metalink) download utility
-# brew install aria2
-
-# npm environment manager
-brew install nvm
-
-# http test tool (curl-like)
-brew install httpie
-
-# file system watch and execute command on file change
-# brew install fswatch
+brew install jq                     # command line json editor
+brew install awscli                 # AWS command line interface
+brew install ctop                   # top for containers https://github.com/bcicen/ctop
+brew install nvm                    # npm environment manager
+brew install httpie                 # http test tool (curl-like)
+brew install fswatch                # file system watch and execute command on file change
+brew install fzf                    # Ctrl+R on steroids
+# Attention: this installs latest Oracle java (10.x currently), requires password
+# brew cask install java
+# brew install maven
+# brew cask install intellij-idea-ce && ./addDockIcon.sh "IntelliJ IDEA CE"
 
 # yaml/json merger -> https://github.com/geofffranks/spruce
 brew tap starkandwayne/cf
 brew install spruce
+brew install lua
 
+brew cask install docker
+# # failed on first install & requires password
+# brew cask install virtualbox
+# brew cask install virtualbox-extension-pack
+# # requires password
+# brew cask install tunnelblick
+
+## Generic utilities
+##############################################
+
+<<<<<<< HEAD
+# file system watch and execute command on file change
+# brew install fswatch
+=======
+## Desktop utilities
+##############################################
+>>>>>>> 0d02f971b2124ef00658d0349910affebd6dec5f
+
+brew cask install keka            # file compressor
+
+<<<<<<< HEAD
 
 brew cask install atext       # Shortcut manager / how to add licence number?
 brew cask install tomighty    # Pomodoro tecnique focus manager
 brew cask install day-o       # Menubar Calendar replacement
 
 # brew cask install macdown && ./addDockIcon.sh "MacDown"
+=======
+# how to add licence number?
+brew cask install atext           # Text expander
+brew cask install tomighty        # Pomodoro Technique timer
+
+# brew cask install macdown && ./addDockIcon.sh "MacDown"             # Markdown Editor
+>>>>>>> 0d02f971b2124ef00658d0349910affebd6dec5f
 brew cask install google-chrome && ./addDockIcon.sh "Google Chrome"
 brew cask install firefox && ./addDockIcon.sh "Firefox"
-# brew cask slack !!! ERROR HERE ?
 brew cask install slack && ./addDockIcon.sh "Slack"
 brew cask install authy && ./addDockIcon.sh "Authy Desktop"
 brew cask install iterm2 && ./addDockIcon.sh "iTerm"
 brew cask install atom && ./addDockIcon.sh "Atom"
-
-# brew cask install virtualbox-extension-pack
-# brew cask install docker
 
 brew cask install dropbox
 brew cask install google-backup-and-sync
@@ -91,15 +102,6 @@ brew cask install onedrive
 # requires extra consent in Security & Privacy panel
 brew cask install avira-antivirus
 
-# DEV tools
-# Attention: this installs latest Oracle java (10.x currently), requires password
-# brew cask install java
-# brew install maven
-# brew cask install intellij-idea-ce && ./addDockIcon.sh "IntelliJ IDEA CE"
-
-
-
-# DG end
 
 
 
@@ -159,25 +161,17 @@ brew install tig
 
 brew install gs
 brew install imagemagick --with-webp
-brew install lua
+
 # brew install lynx
 # brew install p7zip
 # # brew install pigz
-brew install pv
+# brew install pv                 # monitor the progress of data through a pipe
 brew install rename
 brew install rlwrap
 brew install ssh-copy-id
 brew install tree
 # brew install vbindiff
 # brew install zopfli
-
-
-
-# # failed on first install & requires password
-# brew cask install virtualbox
-# # requires password
-# brew cask install tunnelblick
-
 
 
 
